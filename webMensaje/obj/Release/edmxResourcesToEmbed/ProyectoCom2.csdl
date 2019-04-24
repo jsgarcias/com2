@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoCom2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ControlMensaje">
+    <Key>
+      <PropertyRef Name="IDmensaje" />
+    </Key>
+    <Property Name="IDmensaje" Type="Int64" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="mensajeOriginal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="mensajeEncriptado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="mensajeRecibido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="mensajeCorregido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ProyectoCom2Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ControlMensajes" EntityType="Self.ControlMensaje" />
+  </EntityContainer>
+</Schema>

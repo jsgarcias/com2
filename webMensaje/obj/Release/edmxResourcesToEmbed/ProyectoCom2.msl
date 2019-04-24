@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProyectoCom2ModelStoreContainer" CdmEntityContainer="ProyectoCom2Entities1">
+    <EntitySetMapping Name="ControlMensajes">
+      <EntityTypeMapping TypeName="ProyectoCom2Model.ControlMensaje">
+        <MappingFragment StoreEntitySet="ControlMensaje">
+          <ScalarProperty Name="IDmensaje" ColumnName="IDmensaje" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="mensajeOriginal" ColumnName="mensajeOriginal" />
+          <ScalarProperty Name="mensajeEncriptado" ColumnName="mensajeEncriptado" />
+          <ScalarProperty Name="mensajeRecibido" ColumnName="mensajeRecibido" />
+          <ScalarProperty Name="mensajeCorregido" ColumnName="mensajeCorregido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="webMensaje.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicaciones 2</title>
+    <link href="css/foundation.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+
+     <div class="off-canvas-wrapper" >
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left off-canvas-left" id="offCanvasLeft" data-off-canvas>
+               
+             
+                <ul class="off-canvas-left-list">
+                    <li>
+                        <label class="off-canvas-left-title">Control de mensajes</label></li>
+                    <li><a href="ControlMensaje.aspx" class="off-canvas-left-a">Mensajes</a></li>
+
+                </ul>
+              
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <div class="sticky-top-bar">
+                    <nav class="global-nav">
+                        <button type="button" data-toggle="offCanvasLeft">
+                            <i class="fa fa-bars fa-2x hamburger"></i>
+                        </button>
+                        <a href="#" style="color: white; padding-left: 40px">Comunicaciones 2</a>
+                    </nav>
+                </div>
+
+                <div class="grid-container" style="padding-top: 45px;">
+                      <div class="grid-x grid-padding-x">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row expanded collapse footerc">
+        <div class="row expanded">
+            <div class="small-12 medium-12 large-12 columns footerc-e">
+                Comunicaciones 2
+            </div>
+            <div class="small-12 medium-12 large-6 columns">
+                <div class="row expanded">
+                   
+                    <div class="small-12 medium-3 columns footerc-e">
+                        <label class="off-canvas-left-a">Proyecto comunicaciones 2</label>
+                    </div>
+                   
+                </div>
+            </div>
+         
+        </div>
+    </footer>
+
+</body>
+</html>
